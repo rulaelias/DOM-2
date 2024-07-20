@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Contacts List</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="search-container">
+        <input type="text" placeholder="Search contacts">
+        <button id="deleteAllContacts">Delete All</button>
+        <button id="openPopup">Create New Contact</button>
+      </div>
+      <ul class="contacts-list" id="contactList">
+      </ul>
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2 id="popupTitle">Create or Edit Contact</h2>
+        <form id="contactForm">
+          <input type="hidden" id="contactIndex">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="text" id="phone" placeholder="Phone" required>
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+    <div id="infoPopup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" id="closeInfoPopup">&times;</span>
+        <h2>Contact Information</h2>
+        <p id="infoContent"></p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>All rights reserved 2024 | Made by Stephanos and Rula</p>
+  </footer>
+  <script src="js.js"></script>
+</body>
+
+</html>
